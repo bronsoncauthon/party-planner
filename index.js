@@ -30,7 +30,6 @@ async function getParty(id) {
   }
 }
 
-/** Updates state with all RSVPs from the API */
 async function getRsvps() {
   try {
     const response = await fetch(API + "/rsvps");
@@ -42,7 +41,6 @@ async function getRsvps() {
   }
 }
 
-/** Updates state with all guests from the API */
 async function getGuests() {
   try {
     const response = await fetch(API + "/guests");
